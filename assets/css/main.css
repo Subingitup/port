@@ -72,6 +72,57 @@ input, select, textarea {
 	appearance: none;
 }
 
+.introduceme{
+	font-weight:bold;
+}
+
+span.blurblur{
+	padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #efefef;
+    color: blue;
+    font-size: 0.95rem;
+	font-weight: 500;
+}
+
+span.blurblur +p{
+	margin:1em 0;
+}
+
+header.major:after {
+	content: "";
+	display: block;
+	height: 2px;
+	background-color: #dddddd;
+	background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	width: 100%;
+}
+
+#introducediv{
+	text-align: left;
+}
+
+#introducediv p{
+	margin: 1.5em 0;
+	font-size:14pt;
+}
+
+#introducediv p b{
+	font-weight:bold;
+}
+
+#introducediv >div span:first-child{
+	padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #efefef;
+    color: orange;
+    font-size: 0.95rem;
+    font-weight: bold;
+    font-size: 16pt;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -2999,7 +3050,7 @@ input, select, textarea {
 
 		.spotlight .image {
 			display: inline-block;
-			margin-left: 4em;
+			/* margin-left: 4em; */
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 1px;
@@ -3008,7 +3059,7 @@ input, select, textarea {
 			.spotlight .image img {
 				display: block;
 				border-radius: 100%;
-				width: 16em;
+				width: 12em;
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3544,13 +3595,14 @@ input, select, textarea {
 			color: #636363;
 		}
 
-		#main header.major h2:after {
+		/* #main header.major h2:after {
 			background-color: #dddddd;
 			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-		}
+			width:100%;
+		} */
 
 		#main table tbody tr {
 			border-color: #dddddd;
