@@ -145,6 +145,7 @@ header.major:after {
     font-size: 0.95rem;
     font-weight: bold;
     font-size: 16pt;
+	line-height: 45px;
 }
 
 #skilldiv p{
@@ -166,7 +167,11 @@ margin-bottom: 0.3em;
 	margin-bottom: 40px;
 }
 
-
+p.down1{
+	margin:0 0 1em 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+	}
 /* Basic */
 
 	@-ms-viewport {
@@ -198,7 +203,8 @@ margin-bottom: 0.3em;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		/* background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
+		background-image: url("images/overlay.png"),linear-gradient(45deg, #8490c9 15%, #d79088 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1647,6 +1653,12 @@ margin-bottom: 0.3em;
 							padding-top: 2em;
 						}
 
+
+			p.down1{
+				margin:1.5em 0 1em 0;
+				font-size: 1.2rem;
+				font-weight: bold;
+				}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -1892,6 +1904,12 @@ margin-bottom: 0.3em;
 							padding-top: 2.5em;
 						}
 
+
+		p.down1{
+			margin:1.5em 0 1em 0;
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
 		}
 
 /* Box */
@@ -3923,8 +3941,35 @@ text-decoration:none;
 color: #ffffff!important;
 }
 
-p.down1{
-margin:0 0 1em 0;
-font-size: 1.2rem;
-font-weight: bold;
-}
+.scrollToTopBtn {
+	position: fixed;
+	bottom: 20px;
+	right: 5%;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	border: none;
+	border-radius: 50%;
+	background-color:#b3b7e4e0;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 50%;
+	transition: opacity 0.3s, visibility 0.3s;
+	padding: 0!important;;
+	min-width:80px!important;
+	height:80px!important;
+  }
+  
+  .scrollToTopBtn:hover{
+	background-color:#7277b1e0;
+	color:black!important;
+  }
+
+  .scrollToTopBtn.show {
+	opacity: 1;
+	visibility: visible;
+  }
