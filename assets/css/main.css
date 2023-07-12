@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
 
 /*
 	Stellar by HTML5 UP
@@ -84,6 +85,7 @@ span.blurblur{
     font-size: 0.95rem;
 	font-weight: 500;
 	margin-right: 10px;
+	line-height: 35px;
 }
 
 span.blurblur.red{
@@ -153,11 +155,18 @@ header.major:after {
 	/* list-style: none; */
 	padding:0;
 	text-align:left;
+	font-size: 0.95rem;
 }
 
 #projectul > li{
 margin-bottom: 0.3em;
 }
+
+#pptdiv{
+	margin-bottom: 40px;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3465,7 +3474,7 @@ margin-bottom: 0.3em;
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: #636363;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3870,3 +3879,52 @@ margin-bottom: 0.3em;
 			}
 
 		}
+
+
+/*다운로드버튼*/
+.downlodbtn{
+
+font-family: Roboto, sans-serif;
+font-weight: 800;
+font-size: 18px;
+color: #000000!important;
+/* background: linear-gradient(94deg, #4ea6ff 0%, #ff45f3 100%); */
+/* background: linear-gradient(94deg, #ffb545 0%,  #86b1fff0 100%); */
+background: linear-gradient(94deg, #ffb545 0%,  #9290ff 100%);
+padding: 30px 60px;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px!important;
+border-radius: 19px;
+transition : 1308ms;
+transform: translateY(0);
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:0 auto;
+margin-top: 2em;
+}
+
+.downlodbtn:hover{
+
+transition : 1308ms;
+padding: 30px 80px;
+background: linear-gradient(94deg, #ffb545 0%,  #9290ff 100%);
+border: none;
+}
+
+.downlodbtn a{
+	border:none;
+}
+
+.downlodbtn:hover a{
+border:none;
+text-decoration:none;
+color: #ffffff!important;
+}
+
+p.down1{
+margin:0 0 1em 0;
+font-size: 1.2rem;
+font-weight: bold;
+}
