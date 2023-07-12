@@ -83,6 +83,27 @@ span.blurblur{
     color: blue;
     font-size: 0.95rem;
 	font-weight: 500;
+	margin-right: 10px;
+}
+
+span.blurblur.red{
+	color:red;
+}
+
+span.blurblur.green{
+	color:#399d05;
+}
+
+span.blurblur.purple{
+color : #572cbf;
+}
+
+span.blurblur.orange{
+	color : #dd8f00;
+}
+
+span.blurblur.brown{
+	color : #8b6827;
 }
 
 span.blurblur +p{
@@ -122,6 +143,20 @@ header.major:after {
     font-size: 0.95rem;
     font-weight: bold;
     font-size: 16pt;
+}
+
+#skilldiv p{
+	margin: 1em 0 0.8em 0;;
+}
+
+#projectul{
+	/* list-style: none; */
+	padding:0;
+	text-align:left;
+}
+
+#projectul > li{
+margin-bottom: 0.3em;
 }
 /* Basic */
 
